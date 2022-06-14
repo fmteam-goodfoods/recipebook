@@ -1,0 +1,7 @@
+<app-header (onViewChanged)="onChangeView($event)"> </app-header>
+
+<div class="main-container">
+  <app-recipes *ngIf="view === 'recipe'"></app-recipes>
+
+  <app-shopping-list *ngIf="view === 'shoppinglist'"></app-shopping-list>
+</div>
